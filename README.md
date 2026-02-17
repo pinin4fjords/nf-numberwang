@@ -20,7 +20,19 @@ For too long, computational pipeline developers have been forced to execute work
 
 ## Installation
 
-Add the plugin to your `nextflow.config`:
+### From GitHub releases
+
+Download the plugin zip and install it manually:
+
+```bash
+mkdir -p ~/.nextflow/plugins/nf-numberwang-0.1.0
+curl -L https://github.com/pinin4fjords/nf-numberwang/releases/download/v0.1.0/nf-numberwang-0.1.0.zip \
+    -o nf-numberwang-0.1.0.zip
+unzip nf-numberwang-0.1.0.zip -d ~/.nextflow/plugins/nf-numberwang-0.1.0
+rm nf-numberwang-0.1.0.zip
+```
+
+Then add to your `nextflow.config`:
 
 ```groovy
 plugins {
