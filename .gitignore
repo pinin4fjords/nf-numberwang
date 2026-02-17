@@ -1,0 +1,7 @@
+.gradle/
+build/
+.nextflow*
+work/
+*.class
+.idea/
+*.iml
