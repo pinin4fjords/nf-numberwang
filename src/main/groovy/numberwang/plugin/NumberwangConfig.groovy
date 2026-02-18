@@ -25,6 +25,7 @@ class NumberwangConfig implements ConfigScope {
         this.enabled = opts.enabled as Boolean ?: true
         this.rotateBoard = opts.rotateBoard as Boolean ?: true
         this.boardRotation = opts.boardRotation as Integer ?: 0
+        this.german = opts.german as Boolean ?: false
     }
 
     @ConfigOption
@@ -38,4 +39,8 @@ class NumberwangConfig implements ConfigScope {
     @ConfigOption
     @Description('Initial board rotation offset (affects Colosson formula)')
     int boardRotation = 0
+
+    @ConfigOption
+    @Description('Enable N\u00fcmberwang mode (German translation)')
+    boolean german = false
 }

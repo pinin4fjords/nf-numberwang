@@ -14,6 +14,7 @@ class NumberwangFactory implements TraceObserverFactory {
         if (!enabled) return []
 
         final rotateBoard = session.config.navigate('numberwang.rotateBoard', true) as boolean
-        return [new NumberwangObserver(rotateBoard)]
+        final german = session.config.navigate('numberwang.german', false) as boolean
+        return [new NumberwangObserver(rotateBoard, german)]
     }
 }
